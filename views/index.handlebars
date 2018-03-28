@@ -1,0 +1,15 @@
+<ul>
+  {{#each burgers}}
+    {{> burgers/burgers-block}}
+  {{/each}}
+</ul>
+
+<form class="create-form">
+
+  <div class="form-group">
+    <label for="ca">Burger:</label>
+    <input type="text" id="burger" name="name">
+  </div>
+
+  <button type="submit" id="submit">Add Burger</button>
+</form>
